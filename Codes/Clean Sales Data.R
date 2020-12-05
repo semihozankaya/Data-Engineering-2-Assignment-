@@ -45,4 +45,4 @@ wholesalers_customerid <- unique(wholesalers_customerid$CustomerID)
 df3 <- df2 %>% filter(!(CustomerID %in% wholesalers_customerid))
 
 ## Write the clean data
-write_csv(df2, paste0(folder, "Clean/sales.csv"))
+write_csv(df3, paste0(folder, "Clean/sales.csv"))
